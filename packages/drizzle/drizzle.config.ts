@@ -1,9 +1,9 @@
-import { Config } from "drizzle-kit";
-import { env } from "../env";
+import { env } from "@repo/env";
+import type { Config } from "drizzle-kit";
 
 export default {
 	schema: "./src/db/schemas/index.ts",
-	out: "./drizzle",
+	out: "./migrations",
 	driver: "pg",
 	dbCredentials: {
 		connectionString: env.DATABASE_URL,

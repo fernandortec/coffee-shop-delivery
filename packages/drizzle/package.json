@@ -4,13 +4,13 @@
 	"scripts": {
 		"db:generate": "drizzle-kit generate:pg",
 		"db:studio": "drizzle-kit studio",
-		"db:migrate": "bun src/server/db/migrate.ts",
-		"db:seed": "bun src/server/db/seed.ts"
+		"db:migrate": "bun src/db/migrate.ts",
+		"db:seed": "bun src/db/seed.ts"
 	},
 	"dependencies": {
+		"@repo/env": "workspace:*",
 		"drizzle-orm": "^0.30.4",
-		"postgres": "^3.4.4",
-		"zod": "^3.22.4"
+		"postgres": "^3.4.4"
 	},
 	"devDependencies": {
 		"drizzle-kit": "^0.20.14"
