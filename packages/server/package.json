@@ -1,0 +1,12 @@
+{
+  "name": "@repo/server",
+  "version": "0.0.1",
+  "dependencies": {
+    "drizzle-orm": "^0.30.4",
+    "postgres": "^3.4.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
+  }
+}
