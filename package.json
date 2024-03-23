@@ -1,21 +1,23 @@
 {
-  "name": "coffee-shop-delivery",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
-  },
-  "devDependencies": {
-    "@repo/typescript-config": "*",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.0.30",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+	"name": "coffee-shop-delivery",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint"
+	},
+	"devDependencies": {
+		"@repo/typescript-config": "*",
+		"turbo": "latest"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "bun@1.0.30",
+	"workspaces": ["apps/*", "packages/*"],
+	"config": {
+		"commitizen": {
+			"path": "cz-emoji"
+		}
+	}
 }
