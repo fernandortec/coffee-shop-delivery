@@ -14,7 +14,7 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@repo/typescript-config": "*",
+		"@repo/tsconfig": "workspace:*",
 		"@repo/ui": "workspace:*",
 		"@types/node": "^20.11.24",
 		"@types/react": "^18.2.61",

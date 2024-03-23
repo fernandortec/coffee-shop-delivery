@@ -11,7 +11,7 @@
 		"db:seed": "turbo run db:seed"
 	},
 	"devDependencies": {
-		"@repo/typescript-config": "*",
+		"@repo/tsconfig": "workspace:*",
 		"turbo": "latest"
 	},
 	"engines": {
