@@ -1,0 +1,8 @@
+{
+	"name": "@repo/trpc",
+	"version": "0.0.1",
+	"dependencies": {
+		"@repo/drizzle": "workspace:*",
+		"@trpc/server": "^10.45.2"
+	}
+}

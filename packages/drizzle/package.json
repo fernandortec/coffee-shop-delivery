@@ -1,6 +1,9 @@
 {
 	"name": "@repo/drizzle",
 	"version": "0.0.1",
+	"exports": {
+		".": "./src/index.ts"
+	},
 	"scripts": {
 		"db:generate": "drizzle-kit generate:pg",
 		"db:studio": "drizzle-kit studio",

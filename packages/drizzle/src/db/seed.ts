@@ -1,5 +1,5 @@
-import { db } from "@/db/connection";
 import { coffees } from "@/db/schemas";
+import { db } from "@/index";
 
 await db.delete(coffees);
 
