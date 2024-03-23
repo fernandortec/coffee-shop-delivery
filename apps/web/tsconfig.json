@@ -14,5 +14,9 @@
 		"**/*.tsx",
 		".next/types/**/*.ts"
 	],
+
+	"declaration": false,
+	"declarationMap": false,
+
 	"exclude": ["node_modules"]
 }

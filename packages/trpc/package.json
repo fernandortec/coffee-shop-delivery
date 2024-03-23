@@ -1,8 +1,15 @@
 {
 	"name": "@repo/trpc",
 	"version": "0.0.1",
+	"main": "./src/index.ts",
 	"dependencies": {
 		"@repo/drizzle": "workspace:*",
 		"@trpc/server": "^10.45.2"
+	},
+	"devDependencies": {
+		"@types/node": "20.11.30"
+	},
+	"exports": {
+		".": "./src/index.ts"
 	}
 }
