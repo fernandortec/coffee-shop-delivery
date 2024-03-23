@@ -1,0 +1,7 @@
+{
+	"name": "@repo/env",
+	"version": "0.0.1",
+	"dependencies": {
+		"zod": "^3.22.4"
+	}
+}

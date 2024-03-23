@@ -4,7 +4,11 @@
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",
-		"lint": "turbo lint"
+		"lint": "turbo lint",
+		"db:generate": "turbo run db:generate",
+		"db:migrate": "turbo run db:migrate",
+		"db:studio": "turbo run db:studio",
+		"db:seed": "turbo run db:seed"
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "*",

@@ -10,6 +10,6 @@
 		"declarationMap": false
 	},
 
-	"include": ["src"],
+	"include": ["src", "../env"],
 	"exclude": ["node_modules", "dist"]
 }
