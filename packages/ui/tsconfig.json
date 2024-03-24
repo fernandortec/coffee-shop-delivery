@@ -1,9 +1,12 @@
 {
 	"extends": "@repo/tsconfig/base.json",
 	"compilerOptions": {
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["./*"]
-		}
-	}
+			"@/*": ["src/*"]
+		},
+		"jsx": "react"
+	},
 }

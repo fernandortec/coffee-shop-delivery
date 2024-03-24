@@ -9,6 +9,10 @@
 		"lint": "eslint . --max-warnings 0"
 	},
 	"dependencies": {
+		"@repo/trpc": "workspace:*",
+		"@repo/tsconfig": "workspace:*",
+		"@repo/ui": "workspace:*",
+		"@phosphor-icons/react": "^2.0.15",
 		"@trpc/client": "next",
 		"@trpc/react-query": "next",
 		"@trpc/server": "next",
@@ -17,9 +21,6 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@repo/trpc": "workspace:*",
-		"@repo/tsconfig": "workspace:*",
-		"@repo/ui": "workspace:*",
 		"@types/node": "^20.11.30",
 		"@types/react": "^18.2.69",
 		"@types/react-dom": "^18.2.22",
