@@ -9,7 +9,7 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@/app/components/ui/card";
+} from "@repo/ui";
 
 import type { Coffee } from "@repo/drizzle";
 import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";

@@ -35,6 +35,24 @@ button {
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --primary-300: #F1E9C9;
+    --primary-500: #DBAC2C;
+    --primary-700: #C47F17;
+
+    --secondary-700: #4B2995;
+    --secondary-500: #8047FB;
+    --secondary-300: #EBE5F9;
+
+    --base-title: #272221;
+    --base-subtitle: #403937;
+    --base-text: #574F4D;
+    --base-hover: #D7D5D5;
+    --base-button: #E6E5E5;
+    --base-input: #EDEDED;
+    --base-card: #F3F2F2;
+    --base-background: #FAFAFA;
+    --base-white: #FFFFFF;
   }
 
   .dark {
@@ -106,6 +124,13 @@ button {
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
+  --color-primary-300: var(--primary-300);
+  --color-primary-500: var(--primary-500);
+  --color-primary-700: var(--primary-700);
+
+  --color-secondary-300: var(--secondary-300);
+  --color-secondary-500: var(--secondary-500);
+  --color-secondary-700: var(--secondary-700);
 
   @keyframes accordion-down {
     from {
