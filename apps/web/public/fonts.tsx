@@ -1,6 +1,6 @@
 
 import localFont from 'next/font/local'
-import { Baloo_2 } from "next/font/google";
+import { Baloo_2, Roboto } from "next/font/google";
 
 export const baloo2ExtraBold = localFont({
 	src: "../public/Baloo2-ExtraBold.ttf",
@@ -14,4 +14,12 @@ export const baloo2 = Baloo_2({
 	subsets: ["latin"],
 	display: "swap",
 	variable: "--font-baloo2",
+});
+
+
+export const roboto = Roboto({
+	weight: ["700", "400"],
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-roboto",
 });

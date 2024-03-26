@@ -118,8 +118,10 @@ button {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
 
-  --font-family-poppins: var(--font-poppins);
-  --font-family-inter: var(--font-inter);
+
+  --font-family-roboto: var(--font-roboto);
+  --font-family-baloo2: var(--font-baloo2);
+  --font-family-baloo2-extrabold: var(--font-baloo2-extrabold)
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
