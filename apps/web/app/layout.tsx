@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../public/global.css";
+import "@repo/ui/global.css";
 
 import { HeaderLayout } from "app/components/header-layout";
 import { Providers } from "app/lib/providers";

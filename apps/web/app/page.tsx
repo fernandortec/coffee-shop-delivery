@@ -2,7 +2,7 @@ import { Button } from "@repo/ui/button";
 
 export default function Page(): JSX.Element {
 	return (
-		<div>
+		<div className="bg-red-500">
 			<button type="button">opa</button>
 			<Button>opa</Button>
 		</div>
