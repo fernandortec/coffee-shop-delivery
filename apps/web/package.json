@@ -9,11 +9,12 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.15",
     "@repo/trpc": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@repo/drizzle": "workspace:*",
     "@trpc/client": "^10.45.2",
+    "@phosphor-icons/react": "^2.0.15",
     "@trpc/react-query": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "next": "^14.1.4",
