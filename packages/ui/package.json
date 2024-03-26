@@ -14,7 +14,7 @@
 	"exports": {
 		"./postcss.config": "./postcss.config.js",
 		"./global.css": "./src/global.css",
-		"./button": "./src/components/button.tsx"
+		".": "./src/index.tsx"
 	},
 	"devDependencies": {
 		"typescript": "^5.4.3"

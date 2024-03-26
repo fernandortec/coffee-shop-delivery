@@ -1,0 +1,11 @@
+{
+	"name": "@repo/schemas",
+	"version": "0.0.1",
+	"dependencies": {
+		"zod": "^3.22.4",
+		"@repo/drizzle": "workspace:*"
+	},
+	"exports": {
+		"./coffee": "./src/coffee/index.ts"
+	}
+}

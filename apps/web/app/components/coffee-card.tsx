@@ -1,6 +1,6 @@
 "use client";
 
-import { fromOriginalTagToBrTag } from "@/app/components/cofee-card.schema";
+import { fromOriginalTagToBrTag } from "@repo/schemas/coffee";
 
 import {
 	Card,
@@ -11,9 +11,9 @@ import {
 	CardTitle,
 } from "@/app/components/ui/card";
 
-import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
 import type { Coffee } from "@repo/drizzle";
-import { Button } from "@repo/ui/button";
+import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
+import { Button } from "@repo/ui";
 import Image from "next/image";
 
 export function CoffeeCard({
