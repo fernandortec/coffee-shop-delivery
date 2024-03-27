@@ -5,13 +5,17 @@ import {
 	Timer,
 } from "@phosphor-icons/react/dist/ssr";
 import { cn } from "@repo/ui/cn";
+import { serverClient } from "app/_trpc/server";
+import { CoffeeCard } from "app/components/coffee-card";
 import Image from "next/image";
 import { baloo2 } from "public/fonts";
 import coffeeCup from "../public/coffee-cup.svg";
 
-export default function Page(): JSX.Element {
+export default async function Page() {
+	const coffees = await serverClient.getCoffess();
+
 	return (
-		<div className="mt-32 w-screen px-40">
+		<div className="mt-32 w-screen container">
 			<section className={"flex justify-between gap-16 relative"}>
 				<Image
 					alt=""
@@ -25,7 +29,7 @@ export default function Page(): JSX.Element {
 					<h1 className={cn("text-5xl w-full", baloo2.className)}>
 						Encontre o café perfeito <br /> para qualquer hora do dia
 					</h1>
-					<p className="mt-4 text-xl">
+					<p className="mt-4 text-xl ">
 						Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
 						hora
 					</p>
@@ -39,7 +43,7 @@ export default function Page(): JSX.Element {
 						</li>
 
 						<li className="flex items-center gap-3">
-							<span className="h-8 w-8 flex items-center justify-center text-white bg-base-text rounded-full">
+							<span className="h-8 w-8 flex items-center justify-center bg-base-text text-white rounded-full">
 								<Package weight="fill" size={16} />
 							</span>
 							Embalagem mantém o café intacto
@@ -71,9 +75,9 @@ export default function Page(): JSX.Element {
 
 			<h2 className={"text-[2rem] mt-20 font-baloo2"}>Nossos cafés</h2>
 			<main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 gap-8 py-10">
-				{/* {coffees.map((coffee) => (
+				{coffees.map((coffee) => (
 					<CoffeeCard key={coffee.id} coffee={coffee} />
-				))} */}
+				))}
 			</main>
 		</div>
 	);

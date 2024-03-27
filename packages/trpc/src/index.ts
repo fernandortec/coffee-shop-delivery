@@ -1,5 +1,5 @@
-import { coffeesRouter } from "@/routers/coffees";
-import { createCallerFactory, mergeRouters } from "@/trpc";
+import { coffeesRouter } from "./routers/coffees";
+import { createCallerFactory, mergeRouters } from "./trpc";
 
 export { createCallerFactory };
 export const appRouter = mergeRouters(coffeesRouter);

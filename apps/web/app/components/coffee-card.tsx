@@ -11,8 +11,8 @@ import {
 	CardTitle,
 } from "@repo/ui";
 
-import type { Coffee } from "@repo/drizzle";
 import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
+import type { Coffee } from "@repo/drizzle";
 import { Button } from "@repo/ui";
 import Image from "next/image";
 
@@ -20,20 +20,20 @@ export function CoffeeCard({
 	coffee: { description, imagePath, name, price, tags },
 }: { coffee: Coffee }) {
 	return (
-		<Card className="w-[16rem] bg-base-card border-none rounded-tr-[3rem] rounded-bl-[1.5rem]">
-			<CardHeader className="h-[9rem] flex items-center justify-center">
+		<Card className="w-[16rem] bg-base-card border-none rounded-xl rounded-tr-[3rem] rounded-bl-[1.5rem]">
+			<CardHeader className="h-[9rem] flex flex-col items-center justify-center">
 				<Image
 					src={`./coffees/${imagePath}`}
 					alt=""
 					width={120}
 					unoptimized
 					height={120}
-					className="mt-[-1.850rem] mb-1"
+					className="mt-[-1.850rem] mb-2"
 				/>
 				<footer className="flex items-center justify-center gap-2">
 					{tags.map((tag) => (
 						<p
-							className="bg-primary-200 text-primary-700 font-bold text-[0.625rem] px-2 py-1 rounded-2xl"
+							className="bg-primary-300 text-primary-700 font-bold text-[0.625rem] px-2 py-1 rounded-2xl"
 							key={tag}
 						>
 							{fromOriginalTagToBrTag[tag].toUpperCase()}
@@ -42,13 +42,13 @@ export function CoffeeCard({
 				</footer>
 			</CardHeader>
 
-			<CardContent className="font-baloo2 text-center">
+			<CardContent className="font-baloo2 text-center py-0">
 				<CardTitle className="text-xl text-base-subtitle">{name}</CardTitle>
 				<CardDescription className="text-sm text-base-label font-roboto">
 					{description}
 				</CardDescription>
 			</CardContent>
-			<CardFooter className={"flex justify-between items-end gap-6"}>
+			<CardFooter className="flex justify-between items-end gap-6">
 				<p className="text-base-text text-sm">
 					R${" "}
 					<span className={"text-2xl font-baloo2-extrabold"}>

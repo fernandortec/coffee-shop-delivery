@@ -47,6 +47,7 @@ button {
     --base-title: #272221;
     --base-subtitle: #403937;
     --base-text: #574F4D;
+    --base-label: #8D8686;
     --base-hover: #D7D5D5;
     --base-button: #E6E5E5;
     --base-input: #EDEDED;
@@ -118,10 +119,9 @@ button {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
 
-
   --font-family-roboto: var(--font-roboto);
   --font-family-baloo2: var(--font-baloo2);
-  --font-family-baloo2-extrabold: var(--font-baloo2-extrabold)
+  --font-family-baloo2-extrabold: var(--font-baloo2-extrabold);
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -133,6 +133,19 @@ button {
   --color-secondary-300: var(--secondary-300);
   --color-secondary-500: var(--secondary-500);
   --color-secondary-700: var(--secondary-700);
+
+  --color-base-title: var(--base-title);
+  --color-base-subtitle: var(--base-subtitle);
+  --color-base-text: var(--base-text);
+  --color-base-label: var(--base-label);
+  --color-base-hover: var(--base-hover);
+  --color-base-button: var(--base-button);
+  --color-base-input: var(--base-input);
+  --color-base-card: var(--base-card);
+  --color-base-background: var(--base-background);
+  --color-base-white: var(--base-white);
+
+  --container: #000;
 
   @keyframes accordion-down {
     from {
@@ -152,5 +165,20 @@ button {
     to {
       height: "0";
     }
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
   }
 }

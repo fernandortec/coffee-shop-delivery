@@ -1,4 +1,4 @@
-import { createTPRCRouter, publicProcedure } from "@/trpc";
+import { createTPRCRouter, publicProcedure } from "../trpc";
 import { coffees, db } from "@repo/drizzle";
 
 export const coffeesRouter = createTPRCRouter({
