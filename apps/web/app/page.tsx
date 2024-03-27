@@ -5,11 +5,11 @@ import {
 	Timer,
 } from "@phosphor-icons/react/dist/ssr";
 
-import { cn } from "@/lib/utils";
-import { serverClient } from "app/_trpc/server";
-import { CoffeeCard } from "app/components/coffee-card";
+import { CoffeeCard } from "components/coffee-card";
+import { cn } from "lib/utils";
 import Image from "next/image";
 import { baloo2 } from "public/fonts";
+import { serverClient } from "trpc/server";
 import coffeeCup from "../public/coffee-cup.svg";
 
 export default async function Page() {

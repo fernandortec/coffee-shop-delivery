@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
 import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
+import { Button } from "components/ui/button";
 
 import Image from "next/image";
 import logo from "../../public/logo.svg";

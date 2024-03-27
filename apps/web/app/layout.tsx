@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "../public/global.css";
 
-import { HeaderLayout } from "app/components/header-layout";
-import { Providers } from "app/lib/providers";
+import { HeaderLayout } from "components/header-layout";
+import { Providers } from "lib/providers";
 import { baloo2, baloo2ExtraBold, roboto } from "public/fonts";
 
 export const metadata: Metadata = {

@@ -5,7 +5,7 @@ import { fromOriginalTagToBrTag } from "@repo/schemas/coffee";
 import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
 import type { Coffee } from "@repo/drizzle";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import {
 	Card,
 	CardContent,
@@ -13,7 +13,7 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
+} from "components/ui/card";
 
 import Image from "next/image";
 
