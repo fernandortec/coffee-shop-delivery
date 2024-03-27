@@ -2,6 +2,10 @@
 
 import { fromOriginalTagToBrTag } from "@repo/schemas/coffee";
 
+import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
+import type { Coffee } from "@repo/drizzle";
+
+import { Button } from "@/components/ui/button";
 import {
 	Card,
 	CardContent,
@@ -9,11 +13,8 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@repo/ui";
+} from "@/components/ui/card";
 
-import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
-import type { Coffee } from "@repo/drizzle";
-import { Button } from "@repo/ui";
 import Image from "next/image";
 
 export function CoffeeCard({
@@ -42,7 +43,7 @@ export function CoffeeCard({
 				</footer>
 			</CardHeader>
 
-			<CardContent className="font-baloo2 text-center py-0">
+			<CardContent className="font-baloo2 text-center">
 				<CardTitle className="text-xl text-base-subtitle">{name}</CardTitle>
 				<CardDescription className="text-sm text-base-label font-roboto">
 					{description}

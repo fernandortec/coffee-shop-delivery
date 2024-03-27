@@ -4,7 +4,8 @@ import {
 	ShoppingCart,
 	Timer,
 } from "@phosphor-icons/react/dist/ssr";
-import { cn } from "@repo/ui/cn";
+
+import { cn } from "@/lib/utils";
 import { serverClient } from "app/_trpc/server";
 import { CoffeeCard } from "app/components/coffee-card";
 import Image from "next/image";

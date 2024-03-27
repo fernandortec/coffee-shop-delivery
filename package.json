@@ -1,27 +1,28 @@
 {
-  "name": "coffee-shop-delivery",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "db:generate": "turbo run db:generate",
-    "db:migrate": "turbo run db:migrate",
-    "db:studio": "turbo run db:studio",
-    "db:seed": "turbo run db:seed"
-  },
-  "devDependencies": {
-    "@repo/tsconfig": "workspace:*",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.0.30",
-  "workspaces": ["apps/*", "packages/*"],
-  "config": {
-    "commitizen": {
-      "path": "cz-emoji"
-    }
-  }
+	"name": "coffee-shop-delivery",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"reset": "find . -type d \\( -name \"node_modules\" -o -name \".next\" -o -name \"dist\" \\) -prune -exec rm -rf '{}' + && rm -rf ./node_modules && rm -rf ./.next && rm -rf ./dist",
+		"db:generate": "turbo run db:generate",
+		"db:migrate": "turbo run db:migrate",
+		"db:studio": "turbo run db:studio",
+		"db:seed": "turbo run db:seed"
+	},
+	"devDependencies": {
+		"@repo/tsconfig": "workspace:*",
+		"turbo": "latest"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "bun@1.0.30",
+	"workspaces": ["apps/*", "packages/*"],
+	"config": {
+		"commitizen": {
+			"path": "cz-emoji"
+		}
+	}
 }
