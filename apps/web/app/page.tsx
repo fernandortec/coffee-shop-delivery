@@ -16,7 +16,7 @@ export default async function Page() {
 	const coffees = await serverClient.getCoffess();
 
 	return (
-		<div className="mt-32 w-screen container">
+		<div className="mt-32">
 			<section className={"flex justify-between gap-16 relative"}>
 				<Image
 					alt=""
@@ -75,7 +75,7 @@ export default async function Page() {
 			</section>
 
 			<h2 className={"text-[2rem] mt-20 font-baloo2"}>Nossos cafés</h2>
-			<main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 gap-8 py-10">
+			<main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 gap-y-10">
 				{coffees.map((coffee) => (
 					<CoffeeCard key={coffee.id} coffee={coffee} />
 				))}

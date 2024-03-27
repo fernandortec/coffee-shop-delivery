@@ -10,9 +10,8 @@ const buttonVariants = cva(
 			variant: {
 				default:
 					"bg-primary-500 text-primary-foreground shadow hover:bg-primary-700",
-				secondary:
-					"bg-secondary-300 text-secondary-500 shadow-sm hover:bg-base-hover",
-				icon: "bg-secondary-500 hover:bg-secondary-700 text-white ",
+				secondary: "bg-base-button text-base-text shadow-sm hover:bg-base-hover",
+				icon: "bg-secondary-500 text-white hover:bg-secondary-700",
 			},
 			size: {
 				icon: "h-[2.375rem] w-[2.375rem] rounded-md",

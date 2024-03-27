@@ -22,7 +22,9 @@ export default function RootLayout({
 		>
 			<body>
 				<HeaderLayout />
-				<Providers>{children}</Providers>
+				<Providers>
+					<div className="px-40">{children}</div>
+				</Providers>
 			</body>
 		</html>
 	);
