@@ -9,3 +9,5 @@ export const fromOriginalTagToBrTag: {
 	traditional: "Tradicional",
 	with_milk: "Com leite",
 };
+
+export * from './order'
