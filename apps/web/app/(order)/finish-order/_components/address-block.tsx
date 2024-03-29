@@ -30,7 +30,7 @@ export function AddressBlock() {
 					render={({ field }) => (
 						<FormItem>
 							<FormControl>
-								<Input {...field} placeholder="Rua" />
+								<Input {...field} placeholder="Rua" size="fill" />
 							</FormControl>
 							<FormMessage />
 						</FormItem>
@@ -85,7 +85,7 @@ export function AddressBlock() {
 
 					<FormField
 						control={control}
-						name="complement"
+						name="city"
 						render={({ field }) => (
 							<FormItem className="w-full">
 								<FormControl>
@@ -97,7 +97,7 @@ export function AddressBlock() {
 					/>
 					<FormField
 						control={control}
-						name="complement"
+						name="state"
 						render={({ field }) => (
 							<FormItem>
 								<FormControl>

@@ -16,13 +16,18 @@ export function OrderForm() {
 		resolver: zodResolver(orderCoffeeSchema),
 	});
 
-	const finishOrder: SubmitHandler<OrderCoffeeSchema> = () => {};
+
+	const finishOrder: SubmitHandler<OrderCoffeeSchema> = (data) => {
+		console.log(data)
+	};
 
 	return (
 		<Form {...form}>
 			<form onSubmit={form.handleSubmit(finishOrder)}>
 				<AddressBlock />
 				<PaymentBlock />
+
+				<button type="submit">borabil</button>
 			</form>
 		</Form>
 	);
