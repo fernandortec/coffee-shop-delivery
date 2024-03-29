@@ -8,6 +8,7 @@ export const orderCoffeeSchema = z.object({
 	district: z.string(),
 	city: z.string(),
 	state: z.string().length(2),
+	payment: z.enum(["CREDIT_CARD", "PIX", "CASH"]),
 });
 
 export type OrderCoffeeSchema = z.infer<typeof orderCoffeeSchema>;
