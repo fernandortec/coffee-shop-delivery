@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import "../public/global.css";
+import "@/public/global.css";
 
-import { HeaderLayout } from "components/header-layout";
-import { Providers } from "lib/providers";
-import { baloo2, baloo2ExtraBold, roboto } from "public/fonts";
+import { HeaderLayout } from "@/components/header-layout";
+import { Providers } from "@/lib/providers";
+import { baloo2, baloo2ExtraBold, roboto } from "@/public/fonts";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
