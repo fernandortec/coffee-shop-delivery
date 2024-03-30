@@ -1,12 +1,12 @@
+import { MapPin } from "@phosphor-icons/react/dist/ssr";
+import type { OrderCoffeeSchema } from "@repo/schemas/coffee";
 import {
 	FormControl,
 	FormField,
 	FormItem,
 	FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { MapPin } from "@phosphor-icons/react/dist/ssr";
-import type { OrderCoffeeSchema } from "@repo/schemas/coffee";
+} from "components/ui/form";
+import { Input } from "components/ui/input";
 import { useFormContext } from "react-hook-form";
 
 export function AddressBlock() {
