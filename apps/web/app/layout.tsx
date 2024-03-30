@@ -1,6 +1,7 @@
 import "@/public/global.css";
 
 import { HeaderLayout } from "@/components/header-layout";
+import { Toaster } from "@/components/ui/sonner";
 import { Providers } from "@/lib/providers";
 import { baloo2, baloo2ExtraBold, roboto } from "@/public/fonts";
 import type { Metadata } from "next";
@@ -25,6 +26,7 @@ export default function RootLayout({
 				<Providers>
 					<div className="px-40">{children}</div>
 				</Providers>
+				<Toaster richColors />
 			</body>
 		</html>
 	);

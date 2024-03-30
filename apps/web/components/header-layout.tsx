@@ -1,8 +1,9 @@
 import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
-import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
 
+import { HeaderLayoutCart } from "@/components/header-layout-cart";
 import { Button } from "@/components/ui/button";
 import logo from "@/public/logo.svg";
+
 import Image from "next/image";
 
 export function HeaderLayout() {
@@ -17,9 +18,7 @@ export function HeaderLayout() {
 					<MapPin weight="fill" size={22} />
 					Porto Alegre, RS
 				</Button>
-				<Button size="icon" variant="default">
-					<ShoppingCart weight="fill" size={22} />
-				</Button>
+				<HeaderLayoutCart />
 			</div>
 		</header>
 	);

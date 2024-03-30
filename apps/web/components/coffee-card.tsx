@@ -1,11 +1,7 @@
-"use client";
-
 import { fromOriginalTagToBrTag } from "@repo/schemas/coffee";
 
-import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
 import type { Coffee } from "@repo/drizzle";
 
-import { Button } from "@/components/ui/button";
 import {
 	Card,
 	CardContent,
@@ -15,11 +11,16 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 
+import { CoffeeCardInteractions } from "@/components/coffee-card-interactions";
 import Image from "next/image";
 
-export function CoffeeCard({
-	coffee: { description, imagePath, name, price, tags },
-}: { coffee: Coffee }) {
+interface CoffeeCardProps {
+	coffee: Coffee;
+}
+
+export function CoffeeCard({ coffee }: CoffeeCardProps) {
+	const { description, imagePath, name, price, tags } = coffee;
+
 	return (
 		<Card className="w-[16rem] bg-base-card border-none rounded-xl rounded-tr-[3rem] rounded-bl-[1.5rem]">
 			<CardHeader className="h-[9rem] flex flex-col items-center justify-center">
@@ -50,22 +51,7 @@ export function CoffeeCard({
 				</CardDescription>
 			</CardContent>
 			<CardFooter className="flex justify-between items-end gap-6">
-				<p className="text-base-text text-sm">
-					R${" "}
-					<span className={"text-2xl font-baloo2-extrabold"}>
-						{price.toFixed(2)}
-					</span>
-				</p>
-				<div className="flex gap-2 items-end">
-					<div className="bg-base-button h-[2.375rem] w-16 flex items-center justify-center gap-2 rounded-md px-">
-						<span className="text-secondary-500 cursor-pointer"> - </span>
-						<span>1</span>
-						<span className="text-secondary-500 cursor-pointer"> + </span>
-					</div>
-					<Button variant="icon" size="icon">
-						<ShoppingCart size={22} weight="fill" />
-					</Button>
-				</div>
+				<CoffeeCardInteractions coffee={coffee} />
 			</CardFooter>
 		</Card>
 	);

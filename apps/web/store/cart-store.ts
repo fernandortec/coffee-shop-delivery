@@ -3,7 +3,7 @@ import { create } from "zustand";
 interface CartItem {
 	id: string;
 	name: string;
-	imageUrl: string;
+	imagePath: string;
 	price: number;
 }
 
