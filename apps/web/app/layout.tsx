@@ -1,4 +1,4 @@
-import "@/public/global.css";
+import "@/root/public/global.css";
 
 import { HeaderLayout } from "@/root/components/header-layout";
 import { Providers } from "@/root/lib/providers";

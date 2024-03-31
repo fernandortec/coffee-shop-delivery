@@ -5,14 +5,23 @@ import { PaymentBlock } from "@/(order)/finish-order/_components/payment-block";
 import { Form } from "@/root/components/ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
-	orderCoffeeSchema,
 	type OrderCoffeeSchema,
+	orderCoffeeSchema,
 } from "@repo/schemas/coffee";
-import { useForm, type SubmitHandler } from "react-hook-form";
+import { type SubmitHandler, useForm } from "react-hook-form";
 
 export function OrderForm() {
 	const form = useForm<OrderCoffeeSchema>({
 		resolver: zodResolver(orderCoffeeSchema),
+		defaultValues: {
+			city: "",
+			state: "",
+			street: "",
+			number: 0,
+			district: "",
+			complement: "",
+			payment: "CREDIT_CARD",
+		},
 	});
 
 	const finishOrder: SubmitHandler<OrderCoffeeSchema> = (data) => {

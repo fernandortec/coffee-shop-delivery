@@ -5,16 +5,18 @@ import {
 	FormItem,
 	FormMessage,
 } from "@/root/components/ui/form";
+import { RadioGroup } from "@/root/components/ui/radio-group";
+
 import {
 	Bank,
 	CreditCard,
 	CurrencyDollar,
 	Money,
 } from "@phosphor-icons/react/dist/ssr";
+import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 import type { OrderCoffeeSchema } from "@repo/schemas/coffee";
 
-import { type MouseEvent, useState } from "react";
-import { type ControllerRenderProps, useFormContext } from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 
 const payments = [
 	{
@@ -35,19 +37,7 @@ const payments = [
 ];
 
 export function PaymentBlock() {
-	const [activeButton, setActiveButton] = useState<string | null>(null);
-
 	const { control } = useFormContext<OrderCoffeeSchema>();
-
-	const handleChoosePayment = (
-		e: MouseEvent<HTMLButtonElement>,
-		field: ControllerRenderProps<OrderCoffeeSchema, "payment">,
-	) => {
-		const buttonValue = (e.target as HTMLButtonElement).value;
-		setActiveButton(buttonValue);
-
-		field.onChange(e);
-	};
 
 	return (
 		<section className="bg-base-card w-[40rem] p-10 mt-4 rounded">
@@ -60,39 +50,51 @@ export function PaymentBlock() {
 					</span>
 				</p>
 			</header>
-			<div className="flex items-center mt-[3.25rem] gap-2">
-				{payments.map((payment) => (
-					<FormField
-						control={control}
-						name="payment"
-						key={payment.value}
-						render={({ field }) => (
-							<FormItem>
-								<FormControl>
-									<Button
-										type="button"
-										variant="secondary"
-										value={payment.value}
-										className={`
-											h-[3.25rem] w-[11.5rem]
-											flex items-center gap-3 justify-start
-											p-4 text-xs text-base-text
-											${
-												activeButton === payment.value &&
-												"border border-secondary-500 bg-secondary-300"
-											}
-										`}
-										onClick={(e) => handleChoosePayment(e, field)}
-									>
-										<payment.icon className="w-4 h-4 text-secondary-500" />
-										{payment.label}
-									</Button>
-								</FormControl>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
-				))}
+			<div className="flex  items-center mt-[3.25rem] gap-2">
+				<FormField
+					control={control}
+					name="payment"
+					render={({ field }) => (
+						<FormItem className="space-y-3">
+							<FormControl>
+								<RadioGroup
+									onValueChange={field.onChange}
+									defaultValue={field.value}
+									className="flex space-y-1"
+								>
+									{payments.map((payment) => (
+										<FormItem
+											className="flex items-center space-x-3 space-y-0"
+											key={payment.value}
+										>
+											<FormControl>
+												<RadioGroupPrimitive.Item value={payment.value} asChild>
+													<Button
+														type="button"
+														variant="secondary"
+														className={`
+															h-[3.25rem] w-[11.5rem]
+															flex items-center gap-3 justify-start
+															p-4 text-xs text-base-text 
+															${
+																field.value === payment.value &&
+																"border border-secondary-500 bg-secondary-300"
+															}
+														`}
+													>
+														<payment.icon className="w-4 h-4 text-secondary-500" />
+														{payment.label}
+													</Button>
+												</RadioGroupPrimitive.Item>
+											</FormControl>
+										</FormItem>
+									))}
+								</RadioGroup>
+							</FormControl>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
 			</div>
 		</section>
 	);

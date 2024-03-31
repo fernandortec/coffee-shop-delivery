@@ -2,6 +2,7 @@ import { fromOriginalTagToBrTag } from "@repo/schemas/coffee";
 
 import type { Coffee } from "@repo/drizzle";
 
+import { CoffeeCardInteractions } from "@/root/components/coffee-card-interactions";
 import {
 	Card,
 	CardContent,
@@ -9,9 +10,7 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
-
-import { CoffeeCardInteractions } from "@/components/coffee-card-interactions";
+} from "@/root/components/ui/card";
 import Image from "next/image";
 
 interface CoffeeCardProps {

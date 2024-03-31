@@ -1,6 +1,6 @@
 "use client";
 
-import { trpc } from "@/trpc/client"; //import from base URL
+import { trpc } from "@/root/trpc/client"; //import from base URL
 import { httpBatchLink } from "@trpc/client"; //import from external LIB
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
