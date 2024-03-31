@@ -3,8 +3,9 @@ import { create } from "zustand";
 interface CartItem {
 	id: string;
 	name: string;
-	imagePath: string;
 	price: number;
+	quantity: number;
+	imagePath: string;
 }
 
 interface CartStore {
@@ -16,7 +17,13 @@ interface CartStore {
 export const useCartStore = create<CartStore>((set) => ({
 	items: [],
 	addItem: (item: CartItem) =>
-		set((state) => ({ items: [...state.items, item] })),
+		set((state) => {
+			if (state.items.find((storedItem) => storedItem === item)) {
+				return { items: state.items };
+			}
+
+			return { items: [...state.items, item] };
+		}),
 	removeItem: (id: string) =>
 		set((state) => ({ items: state.items.filter((item) => item.id !== id) })),
 }));

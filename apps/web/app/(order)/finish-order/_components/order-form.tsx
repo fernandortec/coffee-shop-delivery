@@ -2,14 +2,13 @@
 
 import { AddressBlock } from "@/(order)/finish-order/_components/address-block";
 import { PaymentBlock } from "@/(order)/finish-order/_components/payment-block";
+import { Form } from "@/root/components/ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { MapPin } from "@phosphor-icons/react/dist/ssr";
 import {
-	type OrderCoffeeSchema,
 	orderCoffeeSchema,
+	type OrderCoffeeSchema,
 } from "@repo/schemas/coffee";
-import { Form } from "components/ui/form";
-import { type SubmitHandler, useForm } from "react-hook-form";
+import { useForm, type SubmitHandler } from "react-hook-form";
 
 export function OrderForm() {
 	const form = useForm<OrderCoffeeSchema>({

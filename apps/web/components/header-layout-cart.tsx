@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { useCartStore } from "@/store/cart-store";
+import { Button } from "@/root/components/ui/button";
+import { useCartStore } from "@/root/store/cart-store";
 import { ShoppingCart } from "@phosphor-icons/react/dist/ssr";
 
 export function HeaderLayoutCart() {

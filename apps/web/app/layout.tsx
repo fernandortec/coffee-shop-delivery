@@ -1,10 +1,11 @@
 import "@/public/global.css";
 
-import { HeaderLayout } from "@/components/header-layout";
-import { Toaster } from "@/components/ui/sonner";
-import { Providers } from "@/lib/providers";
-import { baloo2, baloo2ExtraBold, roboto } from "@/public/fonts";
+import { HeaderLayout } from "@/root/components/header-layout";
+import { Providers } from "@/root/lib/providers";
+import { baloo2, baloo2ExtraBold, roboto } from "@/root/public/fonts";
 import type { Metadata } from "next";
+
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
 	title: "Create Next App",

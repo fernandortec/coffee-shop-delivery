@@ -1,3 +1,10 @@
+import { Button } from "@/root/components/ui/button";
+import {
+	FormControl,
+	FormField,
+	FormItem,
+	FormMessage,
+} from "@/root/components/ui/form";
 import {
 	Bank,
 	CreditCard,
@@ -5,13 +12,7 @@ import {
 	Money,
 } from "@phosphor-icons/react/dist/ssr";
 import type { OrderCoffeeSchema } from "@repo/schemas/coffee";
-import { Button } from "components/ui/button";
-import {
-	FormControl,
-	FormField,
-	FormItem,
-	FormMessage,
-} from "components/ui/form";
+
 import { type MouseEvent, useState } from "react";
 import { type ControllerRenderProps, useFormContext } from "react-hook-form";
 

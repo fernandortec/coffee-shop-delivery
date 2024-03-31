@@ -6,12 +6,11 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
-import { CoffeeCard } from "@/components/coffee-card";
-import { cn } from "@/lib/utils";
-import { baloo2 } from "@/public/fonts";
-import { serverClient } from "@/trpc/server";
-
-import coffeeCup from "@/public/coffee-cup.svg";
+import coffeeCup from "@/root/public/coffee-cup.svg";
+import { CoffeeCard } from "@/root/components/coffee-card";
+import { cn } from "@/root/lib/utils";
+import { baloo2 } from "@/root/public/fonts";
+import { serverClient } from "@/root/trpc/server";
 
 export default async function Page() {
 	const coffees = await serverClient.getCoffess();

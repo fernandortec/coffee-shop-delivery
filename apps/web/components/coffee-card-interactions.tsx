@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { useCartStore } from "@/store/cart-store";
+import { Button } from "@/root/components/ui/button";
+import { useCartStore } from "@/root/store/cart-store";
 import { ShoppingCart } from "@phosphor-icons/react/dist/ssr";
 import type { Coffee } from "@repo/drizzle";
 import { useState } from "react";
@@ -31,7 +31,13 @@ export function CoffeeCardInteractions({
 	const handleAddToCart = () => {
 		const { id, name, imagePath, price } = coffee;
 
-		addItemToCart({ id, imagePath, name, price });
+		addItemToCart({
+			id,
+			imagePath,
+			name,
+			price,
+			quantity: coffeesToBuyQuantity,
+		});
 		toast.success("Item adicionado com sucesso");
 	};
 
