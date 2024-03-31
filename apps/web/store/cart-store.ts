@@ -19,11 +19,29 @@ export const useCartStore = create<CartStore>((set) => ({
 	addItem: (item: CartItem) =>
 		set((state) => {
 			if (state.items.find((storedItem) => storedItem === item)) {
-				return { items: state.items };
+				return {
+					items: [
+						...state.items.filter((storedItem) => storedItem === item),
+						{ ...item, quantity: item.quantity + 1 },
+					],
+				};
 			}
 
 			return { items: [...state.items, item] };
 		}),
 	removeItem: (id: string) =>
-		set((state) => ({ items: state.items.filter((item) => item.id !== id) })),
+		set((state) => {
+			const existingItem = state.items.find((item) => item.id === id);
+			if (!existingItem) return { items: state.items };
+
+			if (existingItem?.quantity > 0)
+				return {
+					items: [
+						...state.items.filter((item) => item !== existingItem),
+						{ ...existingItem, quantity: existingItem.quantity - 1 },
+					],
+				};
+
+			return { items: state.items.filter((item) => item !== existingItem) };
+		}),
 }));
