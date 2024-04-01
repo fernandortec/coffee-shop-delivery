@@ -17,7 +17,7 @@ export function OrderForm() {
 			city: "",
 			state: "",
 			street: "",
-			number: 0,
+			number: 300,
 			district: "",
 			complement: "",
 			payment: "CREDIT_CARD",

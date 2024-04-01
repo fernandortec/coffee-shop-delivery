@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-interface CartItem {
+export interface CoffeeInStore {
 	id: string;
 	name: string;
 	price: number;
@@ -9,39 +9,34 @@ interface CartItem {
 }
 
 interface CartStore {
-	items: CartItem[];
-	addItem: (item: CartItem) => void;
+	items: CoffeeInStore[];
+	addItem: (item: CoffeeInStore) => void;
 	removeItem: (id: string) => void;
 }
 
 export const useCartStore = create<CartStore>((set) => ({
-	items: [],
-	addItem: (item: CartItem) =>
+	items: [
+		{
+			id: "67370a12-634c-4c9e-8618-3336b6d6f072",
+			imagePath: "capuccino.png",
+			name: "Expresso Americano",
+			price: 9.9,
+			quantity: 1,
+		},
+	],
+	addItem: (item: CoffeeInStore) =>
 		set((state) => {
-			if (state.items.find((storedItem) => storedItem === item)) {
-				return {
-					items: [
-						...state.items.filter((storedItem) => storedItem === item),
-						{ ...item, quantity: item.quantity + 1 },
-					],
-				};
-			}
-
-			return { items: [...state.items, item] };
+			return {
+				items: [
+					...state.items.filter((storedItem) => storedItem.id !== item.id),
+					item,
+				],
+			};
 		}),
 	removeItem: (id: string) =>
 		set((state) => {
-			const existingItem = state.items.find((item) => item.id === id);
-			if (!existingItem) return { items: state.items };
-
-			if (existingItem?.quantity > 0)
-				return {
-					items: [
-						...state.items.filter((item) => item !== existingItem),
-						{ ...existingItem, quantity: existingItem.quantity - 1 },
-					],
-				};
-
-			return { items: state.items.filter((item) => item !== existingItem) };
+			return {
+				items: state.items.filter((item) => item.id !== id),
+			};
 		}),
 }));

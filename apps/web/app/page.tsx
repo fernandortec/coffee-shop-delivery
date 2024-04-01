@@ -6,9 +6,9 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
-import coffeeCup from "@/root/public/coffee-cup.svg";
 import { CoffeeCard } from "@/root/components/coffee-card";
 import { cn } from "@/root/lib/utils";
+import coffeeCup from "@/root/public/coffee-cup.svg";
 import { baloo2 } from "@/root/public/fonts";
 import { serverClient } from "@/root/trpc/server";
 
@@ -75,6 +75,7 @@ export default async function Page() {
 			</section>
 
 			<h2 className={"text-[2rem] mt-20 font-baloo2"}>Nossos cafés</h2>
+
 			<main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 gap-y-10 gap-x-8">
 				{coffees.map((coffee) => (
 					<CoffeeCard key={coffee.id} coffee={coffee} />

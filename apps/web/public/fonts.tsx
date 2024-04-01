@@ -3,7 +3,7 @@ import localFont from 'next/font/local'
 import { Baloo_2, Roboto } from "next/font/google";
 
 export const baloo2ExtraBold = localFont({
-	src: "../public/Baloo2-ExtraBold.ttf",
+	src: "../public/baloo2-extrabold.ttf",
 	weight: "900",
 	display: "swap",
 	variable: "--font-baloo2-extrabold",
