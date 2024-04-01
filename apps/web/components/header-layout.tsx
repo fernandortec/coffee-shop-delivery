@@ -2,7 +2,7 @@ import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
 
 import { HeaderLayoutCart } from "@/root/components/header-layout-cart";
 import { Button } from "@/root/components/ui/button";
-import logo from "@/root/public/logo.svg";
+import logo from "@/root/public/assets/logo.svg";
 
 import Image from "next/image";
 import Link from "next/link";

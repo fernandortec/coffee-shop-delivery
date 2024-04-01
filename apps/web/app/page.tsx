@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import { CoffeeCard } from "@/root/components/coffee-card";
 import { cn } from "@/root/lib/utils";
-import coffeeCup from "@/root/public/coffee-cup.svg";
+import coffeeCup from "@/root/public/assets/coffee-cup.svg";
 import { baloo2 } from "@/root/public/fonts";
 import { serverClient } from "@/root/trpc/server";
 
