@@ -4,6 +4,7 @@ import { AddressBlock } from "@/(order)/checkout/_components/address-block";
 import { PaymentBlock } from "@/(order)/checkout/_components/payment-block";
 import { SelectedCoffees } from "@/(order)/checkout/_components/selected-coffees";
 import { Form } from "@/root/components/ui/form";
+import { usePurchasesStore } from "@/root/store/purchases-store";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
 	type OrderCoffeeSchema,
@@ -14,6 +15,9 @@ import { type SubmitHandler, useForm } from "react-hook-form";
 
 export function OrderForm() {
 	const router = useRouter();
+	const addPurchaseToStore = usePurchasesStore(
+		(state) => state.setCurrentPurchase,
+	);
 
 	const form = useForm<OrderCoffeeSchema>({
 		resolver: zodResolver(orderCoffeeSchema),
@@ -29,10 +33,10 @@ export function OrderForm() {
 	});
 
 	const finishOrder: SubmitHandler<OrderCoffeeSchema> = (data) => {
-		console.log(data);
+		addPurchaseToStore(data);
 
 		router.refresh();
-		router.push("/com");
+		router.push("/completed");
 	};
 
 	return (
