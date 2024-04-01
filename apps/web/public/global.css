@@ -145,8 +145,6 @@ button {
   --color-base-background: var(--base-background);
   --color-base-white: var(--base-white);
 
-  --container: #000;
-
   @keyframes accordion-down {
     from {
       height: 0;
