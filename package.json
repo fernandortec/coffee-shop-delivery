@@ -2,14 +2,14 @@
   "name": "coffee-shop-delivery",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "bun --env-file=.env turbo build",
+    "dev": "bun --env-file=.env turbo dev",
     "lint": "turbo lint",
     "reset": "find . -type d \\( -name \"node_modules\" -o -name \".next\" -o -name \"dist\" \\) -prune -exec rm -rf '{}' + && rm -rf ./node_modules && rm -rf ./.next && rm -rf ./dist",
-    "db:generate": "turbo run db:generate",
-    "db:migrate": "turbo run db:migrate",
-    "db:studio": "turbo run db:studio",
-    "db:seed": "turbo run db:seed"
+    "db:generate": "bun --env-file=.env turbo run db:generate",
+    "db:migrate": "bun --env-file=.env turbo run db:migrate",
+    "db:studio": "bun --env-file=.env turbo run db:studio",
+    "db:seed": "bun --env-file=.env turbo run db:seed"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",

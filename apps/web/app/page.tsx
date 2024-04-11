@@ -20,7 +20,7 @@ export default async function Page() {
 			<section className={"flex justify-between gap-16 relative"}>
 				<Image
 					alt=""
-					src="/home-background.png"
+					src="/assets/home-background.png"
 					width={10000}
 					height={10000}
 					className="absolute top-0 blur-2xl"

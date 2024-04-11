@@ -1,21 +1,22 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
-  "pipeline": {
-			"build": {
-				"dependsOn": ["^build"],
-				"outputs": [".next/**", "!.next/cache/**"]
-			},
-			"lint": {
-				"dependsOn": ["^lint"]
-			},
-			"dev": {
-				"cache": false,
-				"persistent": true
-			},
-			"db:generate": {},
-			"db:studio": {},
-			"db:migrate": {},
-			"db:seed": {}
-		}
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["**/.env.*"],
+	"globalDotEnv": [".env"],
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [".next/**", "!.next/cache/**"]
+		},
+		"lint": {
+			"dependsOn": ["^lint"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"db:generate": {},
+		"db:studio": {},
+		"db:migrate": {},
+		"db:seed": {}
+	}
 }
