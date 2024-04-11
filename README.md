@@ -1,164 +1,79 @@
 
 
 
-<h1 align="center">
-    <img alt="Coffee delivery" title="#Coffee Delivery" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ2NTweb_yZKUttMnsc-yk1AzrAviQazcne3MXsAUvDr0lMMXsF_fAs7ydSrEML-oIlQADIaTeVV4iFKW-Aycce72k0ww=w1920-h965-v0" />
-</h1>
-
-<h1 align="center">
-   ☕️ <a href="#"> Coffee Delivery </a>
-</h1>
-
-<h3 align="center">
-    Discover eco-friendly coffees, try new flavours, join the movement!. One cup at a time
-</h3>
-
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/fernandortec/coffee-shop-delivery?color=%2304D361">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/fernandortec/coffee-shop-delivery">
-  
-  <a href="https://github.com/fernandortec/coffee-shop-delivery/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/fernandortec/coffee-shop-delivery">
-  </a>
+<div style="text-align: center; background:; display: flex; align-items: center; justify-content: center; gap: 20px">
+    <img src="https://lh3.googleusercontent.com/pw/AP1GczOkNEwSB1mStj2XLTUwofFACDLb3vjeCjvPycHY-kO6AscGUarirkAPC9eGFj2mCYN8fEPRBPBepL5nkngNntde4DRM_aJLM_4I4xnpvUGylQmnhSgOXw93zYw1xn-aB44iSBlGSfbZ-eXVIvyAan4Ot0GhxMzGeGI5Adem029xtDnxan2Kdb0QanVFCyh9RYwGMsEBcuiZTqdaJkvHp5Gpx3Th4QP62wn8I4NmN7qaNSPEf_WXoWsIfpcRXeQeOnnHguMgyROUg-msvIiXSGevjnZYWGiXYUVi20WUO1gC4XTUREJVqF9OtwhO4qmFWp7PHw6J-V4qK6xnLc9L_EuyzrHS3b5shRJBz_tK3PUfB4SVk-a81iErT5nG22k5CTYBz5Y8AAQqS05XMrIlocQz1Pth6DM3L648NQsHUPcUWGbyfxkBrj9tI3Whk8Nly4m-icAivJ2M9KRRbqUlDtXkbn3YIE5N5XFENLvMbyhLxBk0zDr_p9hme2s2gQ65qzFFojGxK_tS8EEiJu8ckTtRG5s_CTfXHpUSHAGXZvgU-3C-a1FA1ON1ihTaRFx_WvUkEV02qlyLrRLtKFfllaI6yMlSqSqyOc5CFaSbT7ZWhTP9o9FWwmYBS-rqPHfd9fU4GH8I8-0l46Mcn04NOmWclW77hgo2qW8P-Wfi3rogUF1mfXjI6fBsfeWwLO8VuCekFdm-x8z3S5IJrbb6zPZMX1hVfwq7bLpMYmGBzubfnhZPVGk2yNXXTw_Yv5wElDlGETak9_GAscNazGBx7WDpxrc84Fst47WWzG95dqyQuH7NU2EKNqNQKvxdSP48T5O902LMrgxpFS24ukbdmJmfQAdROxwSgCZa7I1RNGOIyar4viziTX3_Llx1gBe9_SIyYsWjE4iN2WTptrtguK7948TPcjbb0diFWxQjFtitedAyHQTbSerouw6UByNdW6A2tntZLqGfkOtyvU9QYojhln1jq716qeldMuOdXBIO4vB6m7yv7Duos2QjgmJ07J_uV1uXhY4UuzlE0m4VgfzCgusH9SyUktL8oA=w1374-h965-s-no-gm?authuser=0" />
     
-   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/fernandortec/coffee-shop-delivery">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/fernandortec/coffee-shop-delivery?style=social">
-  </a>
+<h1 align="center">
+   🕐 <a href="#"> Ignite timer </a>
+</h1>
 
-  <a href="https://github.com/fernandortec">
-    <img alt="made by Fernandortec" src="https://img.shields.io/badge/made%20by-fernandortec-%237519C1">
-  </a>
-  
-  <a href="https://linkedin.com/in/fernandortec">
-    <img alt="Stargazers" src="https://img.shields.io/badge/Linkedin -fernandortec-%237159c1?style=flat&logo=ghost">
-    </a> 
-</p>
+<h3 align="center">An application to manage your time on a daily basis with ease.
+
+</h3>
+</div>
+
+![](https://lh3.googleusercontent.com/pw/AP1GczPbkf3Nm91Kx1rRBHfpjBh5dbKdeT0c9QcEHbrKlN_cKRNMgaFH7oHSOw9_2VwsxuZHfeFzn5oRQQOx2G9UDSxyOQu_Fir4ycHDrHeZAW2DoYudz3CrNr3T6DlGa1nXvkJZaB3AX-pQufyZGuHWEVwrTiTPQTINkF7PKY6eIEWRANulKGIKos9VfK2j2TlK1kNm1VK8-jT9ehnsiO00JM0fjD0oO_D83cv_s4XvYwQPWv_kAscpX87w-N1-oreRFTAMYVGfcCInqXSKdW7IgxJCrwVII302FdgxwyBlZYcB2hxEbjEVLm76dpXPJ16fNl8bfKGmMZpcjUAVAZ3qEo3Ca7zjLt4xI-adikSITNT6DuXHStadNFQCNuRnbjB3AN-s_HmC92-dJvJNw5PZxe1SrmTzV2OcTNoaBNm1OYiiftb8IVCb1u3TFJ3MX1cOsxpvVs8ljqOjijzT6dAkcXEfxr_FAduNwMs5kxJzWQ-O4aNMTtj6QZ7KPlT7ShFJiOsEOp1JVnsTrLx4dK2W4iD4kod8aX3eM9x57D6XcUU_5GgdHojGdZ8s4RTSqkpTIK0LmR4xW817dZaDxA1ts2gN6uxb7gacF39g0wkQJCY1nrLxqfESBS-iEo2230SNV_8tGVBrnceAjHMzh0JLfOLKqs49sHeNbk63G41veR252dBP_HYMtrpGFAtxQQBH0YT8vCZdMM1thfgncA6FIZDHW4cn-V23R_67oG5sil8KLOdoRxDi417s5op_ejLYCLh-t_6wGdM1d8p_FX3SExVuFWNWA5UxrNRo9KCD1L4rFIzUQUCRiho-sXP3TrKZGX8CjxyB-6nQ918JbCudkg6n0Z_WOoA2Muv5RLkZc0TEMe0QTVcSbnN3NLS45DWWrSh__rr9Ot_DIdCVZ1O4rMKaeTENqKWoX0btsSerUrQKhz_C4ZuVFQwjFbSmtPTzalFYyC_DcnAMXs1Fyy2mWoqMo4VNEg_oK-rsG2ylPeKLPxgfzDVcyayZLyO2Sfgmlgg=w1420-h997-s-no-gm?authuser=0)
 
 
-<h4 align="center"> 
-	 #### 🚧 Coffee Delivery  ☕️ Concluído 🚀 🚧
-</h4>
+<div style="padding: 1rem; padding-top: 0px;">
 
-<p align="center">
- <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#layout">Layout</a> • 
- <a href="#how-it-works">How it works</a> • 
- <a href="#tech-stack">Tech Stack</a> • 
- <a href="#contributors">Contributors</a> • 
- <a href="#author">Author</a> • 
- <a href="#user-content-license">License</a>
+## Demo
 
-</p>
+[![Youtube description video](https://img.youtube.com/vi/uT6HVIgGev0/0.jpg)](https://www.youtube.com/watch?v=uT6HVIgGev0)
 
-
-## About
-
-The application facilitates the management of a fictional café's shopping cart, providing users with options to browse available coffee products, add or remove quantities, input their address details, and conveniently view the total sum of items in the cart.
-
----
-
-## Features
-
-- [x] List of products (coffees) available for purchase
-- [x] Add a specific quantity of items to the cart
-- [x] Increase or remove the quantity of items in the cart
-- [x] Form for the user to fill in their address
-- [x] Display the total number of items in the cart in the Header
-- [x] Display the total value of the sum of items in the cart.
-
----
 
 ## Layout
+Feel free to check the layout in figma,  [here ](https://www.figma.com/file/CS2puKWkXFH4ZSTUfrebj0/Ignite-Timer-(Community)?type=design&node-id=313-1874&mode=design&t=IgDYNPyHhyFmwxT2-0).
+    
+## About
 
-The application layout is available on Figma:
+In this project, I've created a timer following @Rocketseat's React.JS training, focusing on gaining in-depth knowledge of React hooks.
 
-<a href="https://www.figma.com/file/NWvvHtx9RWPGiLamXWflMj/Coffee-Delivery-%E2%80%A2-Desafio-React-Copy?fuid=897565135785665940">
-  <img src="https://lh3.googleusercontent.com/fife/ALs6j_EyzxsRy_NiNi9aDKv_WdxvRQSsEqFY9X-XidaHgyUMocrZ6lLj9g0bCDLHcP3hvvpJ7b_JDHEKA4uhZdxZgTvuq9rqbaM6IefYsJjxegdbhZvfpMuPPJTp6Ct9-ls4uMZPljf4RiEeHqzpEVJyrf7g9YLJfFmaQh_KXNDJ7kYucZqpstMd7QtGL83B8t8mpfFDt_aTn5TxRWQZxQX936muK3NxeK85TLlo9eAJjJuyJTtYi0_4T3Y2-wkd4ONkTM-RsjkrosYPkpNyGplHEQeTbWry9m3PEgRsvTDNqoJ7FSbg8z3EBO1YcK_F_gx0gVLoe6j2ANzdmRtsyZPLbVaaN1tP-D1AU9WBO2EJgjWIW7kMypIe2v5hzDoJ3P31TN00HBVzgdNPk40GXbikK5HNfQv1IL-IQgwNhoykKYeMJ2vLMq_gncTBb_gW7lnldbolgEVrlIcGXi7DB0Jy77O65MH3FU6sBFHu761ynXBCY58VKFgxu5jP8WphvPhp0lG7PFWSUKl3sUkAdyukfG6nHgipiUrFBxYycMPs_f8-dT8pnJ8rxWzNmjXk_mMOVu0R8ubgcN33zCq05S2tePHDGRHlvjYLua5CBpwtOtJBNjVcoz3cVC2Odb_euAWVqaM3K4X5R9yWrD0PTlZzUhY6DKpHhHRk0xqpWpmxRmqTbC48SU3c70M6vvptlMoBqWyGeBXWD1ExTMdV3cLx70EGt_Fi-jFMnsPXUUD7IN5-wUazP3ccL8VAaGyjQHGwN84iqNsLJVlyPWD9HB8P3ll5o57CG3mW_rJdBUCfluxi9etwbxNbVz4j58x1azPP0bsT5SYv1a4Mexd9asVxO_D-nNsScxcWVGAEdWCDRkOvUi_gug54wHRt9NNVuRNvAgZ5M4ZP95q_p4N4t_THoH6J6LTkYcFMtHLriKMxmEbUMXWeH9ZHIeAkjXHn1M7JzSaQhQobtU9p8-g3kkidT5aiKGDNyohdsEHwqcNtZkzXVgG82CTX4xkE0Q_dhlGmcRwDv7ifASjF2cTH16SD4MSoYrNFoYsor4TB-ghbLoysiHt5p34veOKXk34s0FQPIkylM-iBHWFbegsiJiQ1ouOwmAyAgeGKgNynBNPY4N2kRXIPLpjKbv8fWK9bSElW9ybKAGZH35E6yTq7FWq6jyVu8t9wJhmu-JNRQY9b0NZ8rYvYqs8xbnGv63D5rn1YUgVh9DGb0HYoNXycacc48ZmAzlOObN144kpZCb-G1CYZOVYxOtbRk_GMmE59i07EXFuDTCgUoqHFbkf_UaflxD8YkHxngemd7D8oC3VEf143gjz7rj6NnGFt30XnARWGF-vWbeCvxIvUjkNWGqHgu57a81T182oza6T3uDrVbCZTZMgIKhVJ3i7JxlpSZ9Bg1_ZMFPEdvDMQ7QDQ9d5Bv_Uldg1TRaTRGvr9IwsJtziIgQFGkxlmE5dpge7Kp1ve1UKMLT-E-C5qC1IGBBgBtZ5eVA08YQNvGg47QCieG7cUADp30wRPNjiI28eWjcftzY1HJLp265TTLP2jKkYfVQIJlokLNPQBzRzR7V6xiOOYAmxCciioJx2lEB-QhT6xeFWfATekLcfXfQav5WOP3UvE17-2kR_982snMjd-mRsfrr1T04kTvK1WCYZzfCtW_NKHDmjga7mgSrsSCKgamexhrpkxkCQ9g-WRCcRgFpLiYWS_MwwZd0jpmtoHoV_77popXsi8yxhzO28AsmOnjaj2HkegT-CsGay5AdEsw6dmS-kG1XrA53iyjcNG0i4i=w1920-h965">
-</a>
+<br />
 
----
 
-## How it works
+Focused on only client-side functionalities, with no backend or consumption of an external API, this project contains some exciting features such as the use of reducers to manage complex state management, styled-components, react hook form to manage form states, immer to handle immutable state as if it were mutable, and much more
 
-This project is divided into two parts:
-1. Backend/Server Logic (packages folder)
-2. Frontend (apps folder)
-
-The project is built using <a href="https://turbo.build/repo"> Turborepo</a>, meaning, its a monorepo with all necessary features to run the app inside one repository.
-
-The architecture consists of all server logic, and backend queries, stored in a separate package (drizzle) and the NextJs (frontend) project on apps/web.
-
-### Pre-requisites
-
-Before you begin, you will need to have the following tools installed on your machine:
-[Git] (https://git-scm.com), [Bun] (https://bun.sh/).
-In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
-
-#### Running the project
+### Installation
 
 ```bash
+# Clone the repository
 
-# Clone this repository
-$ git clone git@github.com:fernandortec/coffee-shop-delivery.git
+git clone https://github.com/fernandortec/ignite-timer.git 
+cd ignite-timer
 
-# Access the project folder cmd/terminal
-$ cd coffee-shop-delivery
+# Install necessary modules
 
-# install the dependencies
-$ bun install
+npm install
 
-# Run the application in development mode
-$ bun dev
+``` 
 
-# The server will start at port: 3000 - go to http://localhost:3000
+## Usage
 
-```
----
+Now just run the project with ```NPM``` and you're good to go.
 
-## Tech Stack
-
-The following tools were used in the construction of the project:
-
-#### **Project**  ([NextJS](https://nextjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
-
--   **[Turborepo](https://github.com/vercel/turbo)**
--   **[Drizzle ORM](https://github.com/drizzle-team/drizzle-orm)**
--   **[TRPC](https://github.com/trpc/trpc)**
--   **[Zod](https://github.com/colinhacks/zod)**
--   **[Shadcn-UI](https://github.com/shadcn-ui/ui)**
--   **[TailwindCSS v4.0.0](https://github.com/tailwindlabs/tailwindcss)**
--   **[Zustand](https://github.com/pmndrs/zustand)**
-
-> See the file  [package.json](https://github.com/fernandortec/coffee-shop-delivery/package.json)
-
-#### [](https://github.com/fernandortec/coffee-shop-delivery)**Utils**
-
--   Prototype:  **[Figma](https://www.figma.com/)**  →  **[Coffee Delivery](https://www.figma.com/file/1LILjoq6EBx9d5W14a92rs/Coffee-Delivery-%E2%80%A2-Desafio-React-Copy?fuid=897565135785665940)**
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
--   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
--   Commit Conventional:  **[Commitlint](https://github.com/conventional-changelog/commitlint)**
--   API Test:  **[Insomnia](https://insomnia.rest/)**
--   Icons:  **[Phosphor Icons](https://phosphoricons.com/)**,  **[Radix icons](https://www.radix-ui.com/icons)**
--   Fonts:  **[Roboto](https://fonts.google.com/specimen/Roboto)**,  **[Baloo2](https://fonts.google.com/specimen/Baloo+2?query=baloo)**
+```bash
+npm start
+``` 
 
 
-## Author
+## Stack utilized
+- [✓] zod
+- [✓] react
+- [✓] immer - A lib to change immutable data as if it was mutable
+- [✓] date-fns
+- [✓] react-hook-form
+- [✓] styled-components
+- [✓] nativeHooks (useReducer and useEffect)
+- [✓] @hookform/resolvers/zod (React hook form + Zod)
 
-<a href="https://github.com/fernandortec">
- <img style="border-radius: 50%;" src="https://github.com/fernandortec.png" width="100px;" alt="Fernando Rodrigues"/>
- <br />
- <sub><b>Fernando Rodrigues</b></sub></a> <a href="https://github.com/fernandortec" title=""></a>
- <br />
 
-[![Linkedin Badge](https://img.shields.io/badge/-Fernando-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/fernandortec/) 
-[![Gmail Badge](https://img.shields.io/badge/-fernandorfigueiredotec@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:fernandorfigueiredotec@gmail.com)
-
----
-
-## License
-
-This project is under the license [MIT](./LICENSE).
-(Https://www.linkedin.com/in/fernandortec/)
+## Features
+-   **Start a cycle on the timer**
+-   **Keep up with the time passed even on another tab**
+-   **Interrupt cycle**
+-   **History of all cycles**
+ 
+    
+</div>
