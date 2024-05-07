@@ -1,10 +1,3 @@
-
-
-
-<h1 align="center">
-    <img alt="Coffee delivery" title="#Coffee Delivery" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ2NTweb_yZKUttMnsc-yk1AzrAviQazcne3MXsAUvDr0lMMXsF_fAs7ydSrEML-oIlQADIaTeVV4iFKW-Aycce72k0ww=w1920-h965-v0" />
-</h1>
-
 <h1 align="center">
    ☕️ <a href="#"> Coffee Delivery </a>
 </h1>
